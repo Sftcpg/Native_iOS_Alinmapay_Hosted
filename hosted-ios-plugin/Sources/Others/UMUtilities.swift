@@ -34,61 +34,85 @@ internal class Common: NSObject {
 
     internal struct Globle
     {
-            static var terminalId = "" // termilan provided by UsRWAY
-            static var password = "" // password provided by URWAY
+            static var terminalId = "" // termilan provided by Client
+            static var password = "" // password provided by Client
             static var merchantKey = ""
             static var url = ""
-            static var merchantIdentifier="merchant.testios.com"
+            static var merchantIdentifier=""
     }
 }
 
 internal struct Validator {
-    func checkMandatoryFields(for model: UWInitializer) -> paymentResult{
+    func checkMandatoryFields(for model: UWInitializer) -> paymentResult {
+
         print("In Validation")
-        print(model.actionCode)
-        print(model.cardOperation)
-        if !isValidAmount(enteredAmount: model.amount)
-        {
-           return .mandatory(.amount)
+
+        let request = model.request
+
+        let paymentType = request["paymentType"] as? String ?? ""
+        let amount = request["amount"] as? String ?? ""
+        let currency = request["currency"] as? String ?? ""
+
+        let order = request["order"] as? [String: Any] ?? [:]
+        let customer = request["customer"] as? [String: Any] ?? [:]
+        let additional = request["additionalDetails"] as? [String: Any] ?? [:]
+        let tokenization = request["tokenization"] as? [String: Any] ?? [:]
+
+        let email = customer["customerEmail"] as? String ?? ""
+        let country = customer["billingAddressCountry"] as? String ?? ""
+        let trackId = order["orderId"] as? String ?? ""
+
+        let transId = request["referenceId"] as? String ?? ""
+
+        let cardOperation = tokenization["operation"] as? String ?? ""
+        let cardToken = tokenization["cardToken"] as? String ?? ""
+
+        let metadata = additional["userData"] as? String ?? ""
+
+        print(paymentType)
+        print(amount)
+        print(email)
+        if !isValidAmount(enteredAmount: amount) {
+            return .mandatory(.amount)
         }
-        
-        if !isValidEmail(enteredEmail: model.email) {
+
+        if !isValidEmail(enteredEmail: email) {
             return .mandatory(.email)
         }
-        
-        if !isValidcountry(enteredcountry: model.country) {
-           return .mandatory(.country)
+
+        if !isValidcountry(enteredcountry: country) {
+            return .mandatory(.country)
         }
-        if !isValidcurrency(enteredcurrency: model.currency) {
-           return .mandatory(.currency)
+
+        if !isValidcurrency(enteredcurrency: currency) {
+            return .mandatory(.currency)
         }
-//        if !isValidtrack(enteredtrack: model.trackIdCode) {
-//           return .mandatory(.trackId)
-//        }
-        if  (model.actionCode == "12" && (model.cardOperation == ""  || model.cardOperation == nil))
-        {
+
+        if paymentType == "12" && cardOperation.isEmpty {
             return .mandatory(.cardOperation)
         }
-    
-        if(model.transid!.isEmpty && (model.actionCode == "3" || model.actionCode == "2" || model.actionCode == "6" || model.actionCode == "9" || model.actionCode == "10" ))
-        {
+
+        if transId.isEmpty &&
+            ["2", "3", "6", "9", "10"].contains(paymentType) {
             return .mandatory(.transid)
         }
-//        if ((model.createTokenIsEnabled ?? true) && model.actionCode != "12") {
-//            return .mandatory(.action_code)
-//        }
-        
-        if model.trackIdCode.isEmpty {
+
+        if trackId.isEmpty {
             return .mandatory(.trackId)
         }
-        
-        if ((model.actionCode == "") || model.actionCode.isEmpty || model.actionCode == "")
-        {
+
+        if paymentType.isEmpty || paymentType == "0" {
             return .mandatory(.action_code)
         }
-        if (model.actionCode == "0")
-        {
-            return .mandatory(.action_code)
+        
+        if let _ = request["airline"] as? [String: Any] {
+
+            if paymentType != "1" && paymentType != "4" {
+
+                return .mandatory(.action_code)
+
+            }
+
         }
         
         return .sucess

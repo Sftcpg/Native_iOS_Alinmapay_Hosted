@@ -4,7 +4,7 @@
 
 import Foundation
 
-protocol IPaymentManager: class {
+protocol IPaymentManager: AnyObject {
 	// do someting...
 }
 

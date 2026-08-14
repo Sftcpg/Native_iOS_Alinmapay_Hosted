@@ -4,7 +4,7 @@
 
 import UIKit
 
-protocol IPaymentPresenter: class {
+protocol IPaymentPresenter: AnyObject {
     // do someting...
     
     func apiResult(result: paymentResult, response: String  , error: Error? )

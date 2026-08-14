@@ -9,7 +9,7 @@ import CommonCrypto
 
 
 
-protocol IPaymentViewController: class {
+protocol IPaymentViewController: AnyObject {
     var router: IPaymentRouter? { get set }
     func apiResult(result: paymentResult, response: String, error: Error?)
 }

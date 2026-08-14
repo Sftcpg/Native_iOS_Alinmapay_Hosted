@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8437A5C72D119CEE0024749D /* Sources in Sources */ = {isa = PBXBuildFile; fileRef = 8437A5C52D119CDA0024749D /* Sources */; };
 		8437A5C82D11AEEC0024749D /* Sources in Resources */ = {isa = PBXBuildFile; fileRef = 8437A5C52D119CDA0024749D /* Sources */; };
 		8437A5D02D11B5E30024749D /* Pods_hosted_ios_plugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8437A5CF2D11B5E30024749D /* Pods_hosted_ios_plugin.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		8437A5D12D11B5E30024749D /* Pods_hosted_ios_plugin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8437A5CF2D11B5E30024749D /* Pods_hosted_ios_plugin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84B1CD7B3023222600C4B0B2 /* Sources in Sources */ = {isa = PBXBuildFile; fileRef = 8437A5C52D119CDA0024749D /* Sources */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -199,7 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8437A5C72D119CEE0024749D /* Sources in Sources */,
+				84B1CD7B3023222600C4B0B2 /* Sources in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +348,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -384,6 +385,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

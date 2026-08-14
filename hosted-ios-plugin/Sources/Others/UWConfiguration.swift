@@ -1,6 +1,6 @@
 //
 //  UMConfiguration.swift
-//  Pods-UrwayDemoApp
+//  Pods-DemoApp
 
 
 import Foundation
@@ -16,12 +16,12 @@ public class UWConfiguration: NSObject {
         self.merchantKey = merchantKey
         self.terminalID = terminalID
         self.url = url
-//        self.merchanIdentifier=merchantIdentifier
+//      self.merchanIdentifier=merchantIdentifier
 //
         Common.Globle.terminalId = self.terminalID
         Common.Globle.password = self.password
         Common.Globle.merchantKey = self.merchantKey
         Common.Globle.url = self.url
-        //Common.Globle.merchantIdentifier=self.merchanIdentifier
+        
     }
 }

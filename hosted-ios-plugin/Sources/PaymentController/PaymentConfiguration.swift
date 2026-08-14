@@ -17,7 +17,7 @@ public class PaymentConfiguration {
         
         controller.interactor = interactor
         controller.router = router
-        interactor.parameters = parameters
+//        interactor.parameters = parameters
         return controller
     }
     

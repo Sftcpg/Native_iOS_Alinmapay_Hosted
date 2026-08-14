@@ -7,8 +7,8 @@ import UIKit
 import CommonCrypto
 
 
-protocol IPaymentInteractor: class {
-    var parameters: [String: Any]? { get set }
+protocol IPaymentInteractor: AnyObject {
+   
     func postAPI(for model: UWInitializer)
 }
 
@@ -23,39 +23,40 @@ struct Item {
 class PaymentInteractor: IPaymentInteractor {
     func postAPI(for model: UWInitializer) {
         
- var requestHash:String = ""
+        var requestHash:String = ""
         var data: String = ""
-        
+        let request = model.request
         let terminalId : String = Common.Globle.terminalId
         let password : String = Common.Globle.password
         let merchantKey : String = Common.Globle.merchantKey
        // let urrlData : String = Common.Globle.
-        let trackid :String = model.trackIdCode
-        //let merchantidentifier : String = model.merchantidentifier ?? ""
-        let amount: String = model.amount
-        let customerEmail: String = model.email
-        let address: String = model.address ?? ""
-        let city: String = model.city ?? ""
-        let trackID: String = model.trackIdCode
-        let transid: String = model.transid ?? ""
-        let state: String = model.state ?? ""
-        let action = model.actionCode
-        let country: String = model.country
-        let currency: String = model.currency
-        let zipCode: String = model.zipCode ?? ""
-        var tokenOperation: String = model.cardOperation ?? ""
-        let cardTocken: String = model.cardToken ?? ""
-      //  let tokenizationType: String = model.tokenizationType ?? "0"
-        let holderName: String = model.holderName ?? ""
-      //  let cardNumber: String = model.cardNumber ?? ""
-      //  let cvv: String = model.cvv ?? ""
-      //  let expMonth: String = model.expMonth ?? ""
-      //  let expYear: String = model.expYear ?? ""
+        let order = request["order"] as? [String: Any] ?? [:]
+        let customer = request["customer"] as? [String: Any] ?? [:]
+        let additional = request["additionalDetails"] as? [String: Any] ?? [:]
+        let tokenization = request["tokenization"] as? [String: Any] ?? [:]
+        let trackID :String = order["orderId"] as? String ?? ""
+       
+        let amount = request["amount"] as? String ?? ""
+        let customerEmail = customer["customerEmail"] as? String ?? ""
+        let address = customer["billingAddressStreet"] as? String ?? ""
+        let city: String = customer["billingAddressCity"] as? String ?? ""
+        let transId = request["referenceId"] as? String ?? ""
+        let state = customer["billingAddressState"] as? String ?? ""
+        let action = request["paymentType"] as? String ?? ""
+        let country = customer["billingAddressCountry"] as? String ?? ""
+        let currency = request["currency"] as? String ?? ""
+        let zipCode = customer["billingAddressPostalCode"] as? String ?? ""
+        let tokenOperation = tokenization["operation"] as? String ?? ""
+        let cardToken = tokenization["cardToken"] as? String ?? ""
+        //let isApplePay: String = model.isApplePay ?? "0"
+        //let holderName: String = model.holderName ?? ""
+//        let paymentTokenString: String = request[paymentTokenString] as? String ?? ""
+   
+       // print("isApplePay : \(isApplePay)")
+        let metaData = additional["userData"] as? String ?? ""
         
-        let metaData: String = model.metaData ?? ""
         
-        
-        data = "\(trackid)|\(terminalId)|\(password)|\(merchantKey)|\(amount)|\(currency)"
+        data = "\(trackID)|\(terminalId)|\(password)|\(merchantKey)|\(amount)|\(currency)"
         print("data : \(data)")
         
         requestHash = sha256(str: data)
@@ -69,26 +70,7 @@ class PaymentInteractor: IPaymentInteractor {
         var paymentJsonString:String = ""
         
         
-        var order :[String: Any] = [:]
-        var orderJsonString:String = ""
-        //
-        var customer:[String: Any] = [:]
-        var customerJsonString:String = ""
-        
-        
-        //
-        var tokenization :[String: Any] = [:]
-        var  tokenizationJsonString :String = ""
-        
-        var carddetails :[String: Any] = [:]
-        var cardJsonString:String = ""
-        
-        var additionaldetails :[String: Any] = [:]
-        var additionalString:String = ""
-//        "additionalDetails": {
-//                "userData": "{\"entryone\":\"abc\",\"entrytwo\":\"def\",\"entrythree\":\"xyz\",\"receiptUrl\":\"http://10.10.8.90:8080/CORE_2.2.2/resultV2Page.jsp\"}"
-//           }
-//        }
+
         
         let ModelName = UIDevice.current.name
         let version = UIDevice.current.systemVersion
@@ -109,174 +91,76 @@ class PaymentInteractor: IPaymentInteractor {
             "clientPlatform": platfrom,
             "deviceModel": ModelName,
             "devicePlatform": platfrom,
-            "deviceOSVersion": version
+            "deviceOSVersion": version	
         ]
-        
-        customer = [
-            
-            "cardHolderName": holderName,
-            "customerEmail":customerEmail,
-            "billingAddressStreet": address,
-            "billingAddressCity": city,
-            "billingAddressState": state,
-            "billingAddressPostalCode": zipCode,
-            "billingAddressCountry": country
-        ]
-        
-        
-        tokenization = [
-            "operation": tokenOperation,
-            "cardToken": cardTocken
-        ]
-      //  print(deviceInfo)
-        
-        order = [
-            "orderId": trackID
-            
-            
-        ]
-        
-        paymentInstrument = [
-            "paymentMethod": "DCI"
-        ]
-        
-//        carddetails = [
-//            "number": cardNumber,
-//            "expiryMonth": expMonth,
-//            "expiryYear": expYear,
-//            "cvv": cvv
-//        ]
-        
-        additionaldetails = [
-            "userData": metaData
-           
-        ]
-        do {
-            let jsonData = try JSONSerialization.data(withJSONObject: deviceInfo, options: [])
-            let jsonString = String(data: jsonData, encoding: .utf8)!
-           // print("Device INFO JSON ", jsonString )
-            deviceInfoJsonString = jsonString
-            
-            
-            
-            let orderjsonData = try JSONSerialization.data(withJSONObject: order, options: [])
-            let orderjsonString = String(data: orderjsonData, encoding: .utf8)!
-           // print("Order JSON ", orderjsonString )
-            orderJsonString = orderjsonString
-            
-            
-            
-            let customerjsonData = try JSONSerialization.data(withJSONObject: customer, options: [])
-            let custjsonString = String(data: customerjsonData, encoding: .utf8)!
-           // print(" Customer JSON ", custjsonString )
-            customerJsonString = custjsonString
-            
-            
-            let instumentjsonData = try JSONSerialization.data(withJSONObject: paymentInstrument, options: [])
-            let instrumentjsonString = String(data: instumentjsonData, encoding: .utf8)!
-            //print("Instrument JSON ", instrumentjsonString )
-            paymentJsonString = instrumentjsonString
-            
-            let cardjsonData = try JSONSerialization.data(withJSONObject: carddetails, options: [])
-            let cardjsonString = String(data: cardjsonData, encoding: .utf8)!
-          //  print("Card JSON ", cardjsonString )
-            cardJsonString = cardjsonString
-            
-            
-            let tokenizationjsonData = try JSONSerialization.data(withJSONObject: tokenization, options: [])
-            let tokenjsonString = String(data: tokenizationjsonData, encoding: .utf8)!
-            //print("tokenizationjsonData JSON ", tokenjsonString )
-            tokenizationJsonString = tokenjsonString
-            
-        } catch  {
-            print("error")
-        }
-        let strIPAddress = Validator().getWiFiAddress()
-        print("iOS Hosted Framework initiated Successfully with version \(myPodVersion)")
-        if let minimumOSVersion = Bundle.main.infoDictionary?["MinimumOSVersion"] as? String {
-           // print("Minimum iOS Deployment Target*****: \(minimumOSVersion)")
-            print("Expected Minimum iOS Deployment Target : 13.0 | Fount Minimum iOS Deployment Target : \(minimumOSVersion) ")
-        }
-        
-        let osVersion = ProcessInfo.processInfo.operatingSystemVersion
-        print("iOS version App installed : \(osVersion.majorVersion).\(osVersion.minorVersion).\(osVersion.patchVersion)")
-        let appName = Bundle.main.object(forInfoDictionaryKey: "CFBundleName") as? String
-        print("iOS Application Name : \(appName) ")
-        
-        let parameters = [
-            
-            "amount": amount,
-           // "address": address,
-            "customerIp": strIPAddress,
-            // "city": city,
-            "order": order,
-            "terminalId": "\(terminalId)",
-            "referenceId": transid,
-            // "customer":customerJsonString,
-          //  "applePayId": "applepay",
-            "paymentType": action,
-            "password": "\(password)",
-            "merchantIp": strIPAddress,
-            "signature": "\(requestHash)",
-            "country": country,
-            "currency": currency,
-            "customer": customer,
 
-            
-            "tokenization": tokenization,
-           // "paymentInstrument" : paymentInstrument,
-            //"card":carddetails,
-            "additionalDetails": additionaldetails,
-            
-         "deviceInfo": deviceInfoJsonString
-            
-            
-        ] as [String : Any]
+        let strIPAddress = Validator().getWiFiAddress()
         
+
+        var parameters = request
+
+        parameters["terminalId"] = terminalId
+        parameters["password"] = password
+        parameters["signature"] = requestHash
+
+        parameters["deviceInfo"] = deviceInfo
+
+        parameters["customerIp"] = strIPAddress
+        parameters["merchantIp"] = strIPAddress
+//        parameters["paymentTokenString"] = paymentTokenString
         var requestparam : String = ""
-        
-      
-        //print("REQUEST: \(parameters)")
-//        let jsonData = try JSONSerialization.data(withJSONObject: deviceInfo, options: [])
-//        let jsonString = String(data: jsonData, encoding: .utf8)!
-//        print("Device INFO JSON ", jsonString )
-////        deviceInfoJsonString = jsonString
         do {
             let respjsonData = try JSONSerialization.data(withJSONObject: parameters, options: [])
                let respjsonString = String(data: respjsonData, encoding: .utf8)!
-                 print("Request Body :  ", respjsonString )
+                 print("Request Body", respjsonString )
             requestparam = respjsonString
         }
         catch {
             print("Error: cannot create JSON from todo")
             return
         }
-        
-       // print("REQUEST2 : \( requestparam )")
+    
         var urrl = Common.Globle.url
         print("Request URL : \( urrl )")
         
-        guard let url = URL(string: urrl) else { return }
-        
-        let request = NSMutableURLRequest(url: url)
-        do {
-            let postData =  try JSONSerialization.data(withJSONObject: parameters, options: [])
-            request.httpBody = postData
-            //print("REQUEST: \(postData)")
-        }
-        catch {
-            print("Error: cannot create JSON from todo")
+        guard let url = URL(string: urrl) else {
             return
         }
-        request.httpMethod = "POST"
-        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+
+        var urlRequest = URLRequest(url: url)
         
-        URLSession.shared.dataTask(with: request as URLRequest) { data, response, error in
+       
+        do {
+
+            let postData = try JSONSerialization.data(
+                withJSONObject: parameters,
+                options: [.prettyPrinted]
+            )
+            if let req = String(data: postData, encoding: .utf8) {
+         
+                //print("Api REQ Body: \(req)")
+               
+            }
+            urlRequest.httpBody = postData
+
+            if let json = String(data: postData, encoding: .utf8) {
+//                print("Request Body:\(json)")
+//                print(json)
+            }
+
+        } catch {
+            print(error.localizedDescription)
+            return
+        }
+        urlRequest.httpMethod = "POST"
+        urlRequest.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+        URLSession.shared.dataTask(with: urlRequest) { data, response, error in
             guard let data = data else {
                 print("Error fetching data: \(String(describing: error))")
                 return
             }
-           // print("Data \(data)")
+       
             if let rawResponse = String(data: data, encoding: .utf8) {
                 print("Api Response Body: \(rawResponse)")
                
@@ -341,7 +225,7 @@ class PaymentInteractor: IPaymentInteractor {
     
     var presenter: IPaymentPresenter?
     var manager: IPaymentManager?
-    var parameters: [String: Any]?
+   
     
     var newURL: String = ""
     var transID: String = ""
