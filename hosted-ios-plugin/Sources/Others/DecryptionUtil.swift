@@ -13,7 +13,7 @@ class DecryptionUtil {
         }
         // Convert to Base64
         let base64String = secretKeyBytes.base64EncodedString()
-        print("Secret Key (Base64): \(base64String)")
+       // print("Secret Key (Base64): \(base64String)")
         //let base64String = Data(encryptedResponse).base64EncodedString()
         let encryptedResponse = encryptedResponse.trimmingCharacters(in: .whitespacesAndNewlines)
 

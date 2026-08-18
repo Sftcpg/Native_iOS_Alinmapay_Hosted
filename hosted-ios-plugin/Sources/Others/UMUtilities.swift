@@ -69,9 +69,9 @@ internal struct Validator {
 
         let metadata = additional["userData"] as? String ?? ""
 
-        print(paymentType)
-        print(amount)
-        print(email)
+       // print(paymentType)
+       // print(amount)
+      //  print(email)
         if !isValidAmount(enteredAmount: amount) {
             return .mandatory(.amount)
         }

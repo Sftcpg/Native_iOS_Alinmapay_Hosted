@@ -107,8 +107,8 @@ extension PaymentViewController: IPaymentViewController {
   
     
     func apiResult(result: paymentResult, response: String, error: Error?) {
-       // print("IN PAYMNET CONTROll " ,response)
-        //let message = UMResponceMessage.responseDict[responsecode] ?? ""
+     // print("IN PAYMNET CONTROll " ,response)
+       //let message = UMResponceMessage.responseDict[responsecode] ?? ""
         
 
 

@@ -17,7 +17,7 @@ iOS_Hosted_plugin is available through [CocoaPods](https://cocoapods.org). To in
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'iOS_Hosted_plugin'
+    pod 'hosted-ios-plugin', '1.0.0'
 ```
 
 ## Author

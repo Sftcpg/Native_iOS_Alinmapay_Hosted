@@ -57,7 +57,7 @@ class PaymentInteractor: IPaymentInteractor {
         
         
         data = "\(trackID)|\(terminalId)|\(password)|\(merchantKey)|\(amount)|\(currency)"
-        print("data : \(data)")
+     //   print("data : \(data)")
         
         requestHash = sha256(str: data)
         
@@ -78,7 +78,7 @@ class PaymentInteractor: IPaymentInteractor {
         
         
         let myPodVersion = MyPodVersion.version
-        print("My Pod Version: \(myPodVersion)")
+      //  print("My Pod Version: \(myPodVersion)")
         
         let headers = [
             "content-type": "application/json",
@@ -192,7 +192,9 @@ class PaymentInteractor: IPaymentInteractor {
                         let rawResponse = String(data: data, encoding: .utf8)
                         self.presenter?.apiResult(result: .sucess, response: rawResponse ?? "" , error: error);
                     }
-                }            } catch {
+                }
+            }
+            catch {
                 print("Error decoding JSON: \(error)")
             }
 //            -----------

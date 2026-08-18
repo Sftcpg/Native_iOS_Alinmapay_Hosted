@@ -1,0 +1,3 @@
+module hosted_ios_plugin {
+    header "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/hosted_ios_plugin.build/include/hosted-ios-plugin-Swift.h"
+}
