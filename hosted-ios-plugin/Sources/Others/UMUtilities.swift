@@ -2,8 +2,6 @@
 //  UMUtilities.swift
 //  directpg
 //
-//  Created by Concerto on 10/10/24.
-//
 
 
 

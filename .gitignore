@@ -1,8 +1,7 @@
-
-.DS_Store
 Pods/
-Podfile.lock
+.build/
+.swiftpm/
 DerivedData/
-build/
 xcuserdata/
 *.xcuserstate
+.DS_Store

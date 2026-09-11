@@ -2,10 +2,7 @@
 ////  UWInitializer.swift
 ////  Hosted plugin
 ////
-////  Created by Concerto on 10/10/24.
-////  Rewritten for Swift Safety & Apple Pay
-////
-//
+
 import Foundation
 import UIKit
 import PassKit

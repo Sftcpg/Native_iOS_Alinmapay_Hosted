@@ -2,8 +2,6 @@
 //  hosted_ios_plugin.h
 //  hosted-ios-plugin
 //
-//  Created by Concerto on 16/12/24.
-//
 
 #import <Foundation/Foundation.h>
 

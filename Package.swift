@@ -3,22 +3,28 @@
 import PackageDescription
 
 let package = Package(
-    name: "hosted-ios-plugin",
+    name: "HostedIOSAlinmapay",
+
     platforms: [
         .iOS(.v12)
     ],
+
     products: [
         .library(
-            name: "hosted-ios-plugin",
-            targets: ["hosted-ios-plugin"]
+            name: "HostedIOSAlinmapay",
+            targets: ["HostedIOSAlinmapay"]
         )
     ],
+
     targets: [
         .target(
-            name: "hosted-ios-plugin",
-            path: "hosted-ios-plugin/Sources/",
+            name: "HostedIOSAlinmapay",
+            path: "hosted-ios-plugin/Sources",
             resources: [
                 .process("PaymentController/StoryBoard")
+            ],
+            linkerSettings: [
+                .linkedFramework("UIKit")
             ]
         )
     ]

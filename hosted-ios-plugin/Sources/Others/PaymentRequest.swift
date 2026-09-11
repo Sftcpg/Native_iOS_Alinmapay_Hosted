@@ -2,8 +2,6 @@
 //  PaymentRequest.swift
 //  
 //
-//  Created by Concerto on 05/08/26.
-//
 
 import Foundation
 

@@ -2,8 +2,6 @@
 //  UMInitialization.swift
 //  hosted-ios-plugin
 //
-//  Created by Concerto on 17/12/24.
-//
 
 import Foundation
 import UIKit

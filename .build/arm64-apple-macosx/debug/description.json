@@ -3,7 +3,7 @@
 
   ],
   "copyCommands" : {
-    "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/hosted-ios-plugin_hosted-ios-plugin.bundle/Main.storyboard" : {
+    "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/HostedIOSAlinmapay_HostedIOSAlinmapay.bundle/Main.storyboard" : {
       "inputs" : [
         {
           "kind" : "file",
@@ -13,7 +13,7 @@
       "outputs" : [
         {
           "kind" : "file",
-          "name" : "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/hosted-ios-plugin_hosted-ios-plugin.bundle/Main.storyboard"
+          "name" : "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/HostedIOSAlinmapay_HostedIOSAlinmapay.bundle/Main.storyboard"
         }
       ]
     }
@@ -30,9 +30,9 @@
 
   ],
   "swiftCommands" : {
-    "C.hosted-ios-plugin-arm64-apple-macosx26.0-debug.module" : {
-      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
-      "fileList" : "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/hosted_ios_plugin.build/sources",
+    "C.HostedIOSAlinmapay-arm64-apple-macosx-debug.module" : {
+      "executable" : "/Applications/Xcode-26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/HostedIOSAlinmapay.build/sources",
       "importPath" : "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/Modules",
       "inputs" : [
         {
@@ -97,41 +97,41 @@
         },
         {
           "kind" : "file",
-          "name" : "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/hosted_ios_plugin.build/DerivedSources/resource_bundle_accessor.swift"
+          "name" : "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/HostedIOSAlinmapay.build/DerivedSources/resource_bundle_accessor.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+          "name" : "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/swift-version--112E4EF74740DA65.txt"
         },
         {
           "kind" : "virtual",
-          "name" : "<hosted-ios-plugin-arm64-apple-macosx26.0-debug.module-resources>"
+          "name" : "<HostedIOSAlinmapay-arm64-apple-macosx-debug.module-resources>"
         },
         {
           "kind" : "file",
-          "name" : "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/hosted_ios_plugin.build/sources"
+          "name" : "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/HostedIOSAlinmapay.build/sources"
         }
       ],
       "isLibrary" : true,
-      "moduleName" : "hosted_ios_plugin",
-      "moduleOutputPath" : "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/Modules/hosted_ios_plugin.swiftmodule",
+      "moduleName" : "HostedIOSAlinmapay",
+      "moduleOutputPath" : "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/Modules/HostedIOSAlinmapay.swiftmodule",
       "objects" : [
-        "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/hosted_ios_plugin.build/MyPodVersion.swift.o",
-        "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/hosted_ios_plugin.build/DecryptionUtil.swift.o",
-        "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/hosted_ios_plugin.build/PaymentRequest.swift.o",
-        "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/hosted_ios_plugin.build/ReqPay.swift.o",
-        "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/hosted_ios_plugin.build/UMResponceErrorEnum.swift.o",
-        "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/hosted_ios_plugin.build/UMUtilities.swift.o",
-        "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/hosted_ios_plugin.build/UWConfiguration.swift.o",
-        "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/hosted_ios_plugin.build/UWInitializer.swift.o",
-        "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/hosted_ios_plugin.build/PaymentViewController.swift.o",
-        "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/hosted_ios_plugin.build/PaymentConfiguration.swift.o",
-        "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/hosted_ios_plugin.build/PaymentPresenter.swift.o",
-        "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/hosted_ios_plugin.build/PaymentInteractor.swift.o",
-        "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/hosted_ios_plugin.build/PaymentManager.swift.o",
-        "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/hosted_ios_plugin.build/PaymentRouter.swift.o",
-        "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/hosted_ios_plugin.build/UMInitialization.swift.o",
-        "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/hosted_ios_plugin.build/resource_bundle_accessor.swift.o"
+        "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/HostedIOSAlinmapay.build/MyPodVersion.swift.o",
+        "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/HostedIOSAlinmapay.build/DecryptionUtil.swift.o",
+        "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/HostedIOSAlinmapay.build/PaymentRequest.swift.o",
+        "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/HostedIOSAlinmapay.build/ReqPay.swift.o",
+        "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/HostedIOSAlinmapay.build/UMResponceErrorEnum.swift.o",
+        "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/HostedIOSAlinmapay.build/UMUtilities.swift.o",
+        "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/HostedIOSAlinmapay.build/UWConfiguration.swift.o",
+        "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/HostedIOSAlinmapay.build/UWInitializer.swift.o",
+        "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/HostedIOSAlinmapay.build/PaymentViewController.swift.o",
+        "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/HostedIOSAlinmapay.build/PaymentConfiguration.swift.o",
+        "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/HostedIOSAlinmapay.build/PaymentPresenter.swift.o",
+        "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/HostedIOSAlinmapay.build/PaymentInteractor.swift.o",
+        "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/HostedIOSAlinmapay.build/PaymentManager.swift.o",
+        "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/HostedIOSAlinmapay.build/PaymentRouter.swift.o",
+        "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/HostedIOSAlinmapay.build/UMInitialization.swift.o",
+        "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/HostedIOSAlinmapay.build/resource_bundle_accessor.swift.o"
       ],
       "otherArguments" : [
         "-target",
@@ -153,109 +153,103 @@
         "-parse-as-library",
         "-emit-objc-header",
         "-emit-objc-header-path",
-        "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/hosted_ios_plugin.build/include/hosted-ios-plugin-Swift.h",
+        "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/HostedIOSAlinmapay.build/include/HostedIOSAlinmapay-Swift.h",
         "-color-diagnostics",
         "-swift-version",
         "5",
         "-plugin-path",
-        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "/Applications/Xcode-26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
         "-sdk",
-        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+        "/Applications/Xcode-26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
         "-F",
-        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
-        "-F",
-        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "/Applications/Xcode-26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
         "-I",
-        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "/Applications/Xcode-26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
         "-L",
-        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "/Applications/Xcode-26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
         "-g",
         "-Xcc",
         "-isysroot",
         "-Xcc",
-        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+        "/Applications/Xcode-26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
         "-Xcc",
         "-F",
         "-Xcc",
-        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
-        "-Xcc",
-        "-F",
-        "-Xcc",
-        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "/Applications/Xcode-26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
         "-Xcc",
         "-fPIC",
         "-Xcc",
         "-g"
       ],
-      "outputFileMapPath" : "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/hosted_ios_plugin.build/output-file-map.json",
+      "outputFileMapPath" : "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/HostedIOSAlinmapay.build/output-file-map.json",
       "outputs" : [
         {
           "kind" : "file",
-          "name" : "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/hosted_ios_plugin.build/MyPodVersion.swift.o"
+          "name" : "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/HostedIOSAlinmapay.build/MyPodVersion.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/hosted_ios_plugin.build/DecryptionUtil.swift.o"
+          "name" : "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/HostedIOSAlinmapay.build/DecryptionUtil.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/hosted_ios_plugin.build/PaymentRequest.swift.o"
+          "name" : "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/HostedIOSAlinmapay.build/PaymentRequest.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/hosted_ios_plugin.build/ReqPay.swift.o"
+          "name" : "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/HostedIOSAlinmapay.build/ReqPay.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/hosted_ios_plugin.build/UMResponceErrorEnum.swift.o"
+          "name" : "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/HostedIOSAlinmapay.build/UMResponceErrorEnum.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/hosted_ios_plugin.build/UMUtilities.swift.o"
+          "name" : "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/HostedIOSAlinmapay.build/UMUtilities.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/hosted_ios_plugin.build/UWConfiguration.swift.o"
+          "name" : "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/HostedIOSAlinmapay.build/UWConfiguration.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/hosted_ios_plugin.build/UWInitializer.swift.o"
+          "name" : "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/HostedIOSAlinmapay.build/UWInitializer.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/hosted_ios_plugin.build/PaymentViewController.swift.o"
+          "name" : "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/HostedIOSAlinmapay.build/PaymentViewController.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/hosted_ios_plugin.build/PaymentConfiguration.swift.o"
+          "name" : "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/HostedIOSAlinmapay.build/PaymentConfiguration.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/hosted_ios_plugin.build/PaymentPresenter.swift.o"
+          "name" : "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/HostedIOSAlinmapay.build/PaymentPresenter.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/hosted_ios_plugin.build/PaymentInteractor.swift.o"
+          "name" : "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/HostedIOSAlinmapay.build/PaymentInteractor.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/hosted_ios_plugin.build/PaymentManager.swift.o"
+          "name" : "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/HostedIOSAlinmapay.build/PaymentManager.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/hosted_ios_plugin.build/PaymentRouter.swift.o"
+          "name" : "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/HostedIOSAlinmapay.build/PaymentRouter.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/hosted_ios_plugin.build/UMInitialization.swift.o"
+          "name" : "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/HostedIOSAlinmapay.build/UMInitialization.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/hosted_ios_plugin.build/resource_bundle_accessor.swift.o"
+          "name" : "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/HostedIOSAlinmapay.build/resource_bundle_accessor.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/Modules/hosted_ios_plugin.swiftmodule"
+          "name" : "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/Modules/HostedIOSAlinmapay.swiftmodule"
         }
       ],
       "prepareForIndexing" : false,
@@ -275,9 +269,9 @@
         "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/hosted-ios-plugin/Sources/PaymentController/Worker/PaymentManager.swift",
         "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/hosted-ios-plugin/Sources/PaymentController/Worker/PaymentRouter.swift",
         "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/hosted-ios-plugin/Sources/UMInitialization.swift",
-        "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/hosted_ios_plugin.build/DerivedSources/resource_bundle_accessor.swift"
+        "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/HostedIOSAlinmapay.build/DerivedSources/resource_bundle_accessor.swift"
       ],
-      "tempsPath" : "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/hosted_ios_plugin.build",
+      "tempsPath" : "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/HostedIOSAlinmapay.build",
       "wholeModuleOptimization" : false
     }
   },
@@ -285,10 +279,10 @@
 
   },
   "swiftTargetScanArgs" : {
-    "hosted_ios_plugin" : [
-      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+    "HostedIOSAlinmapay" : [
+      "/Applications/Xcode-26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
       "-module-name",
-      "hosted_ios_plugin",
+      "HostedIOSAlinmapay",
       "-c",
       "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/hosted-ios-plugin/Sources/MyPodVersion.swift",
       "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/hosted-ios-plugin/Sources/Others/DecryptionUtil.swift",
@@ -305,7 +299,7 @@
       "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/hosted-ios-plugin/Sources/PaymentController/Worker/PaymentManager.swift",
       "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/hosted-ios-plugin/Sources/PaymentController/Worker/PaymentRouter.swift",
       "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/hosted-ios-plugin/Sources/UMInitialization.swift",
-      "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/hosted_ios_plugin.build/DerivedSources/resource_bundle_accessor.swift",
+      "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/HostedIOSAlinmapay.build/DerivedSources/resource_bundle_accessor.swift",
       "-I",
       "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/Modules",
       "-target",
@@ -327,45 +321,39 @@
       "-parse-as-library",
       "-emit-objc-header",
       "-emit-objc-header-path",
-      "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/hosted_ios_plugin.build/include/hosted-ios-plugin-Swift.h",
+      "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/HostedIOSAlinmapay.build/include/HostedIOSAlinmapay-Swift.h",
       "-color-diagnostics",
       "-swift-version",
       "5",
       "-plugin-path",
-      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "/Applications/Xcode-26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
       "-sdk",
-      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+      "/Applications/Xcode-26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
       "-F",
-      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
-      "-F",
-      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "/Applications/Xcode-26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
       "-I",
-      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "/Applications/Xcode-26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
       "-L",
-      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "/Applications/Xcode-26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
       "-g",
       "-Xcc",
       "-isysroot",
       "-Xcc",
-      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+      "/Applications/Xcode-26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
       "-Xcc",
       "-F",
       "-Xcc",
-      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
-      "-Xcc",
-      "-F",
-      "-Xcc",
-      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "/Applications/Xcode-26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
       "-Xcc",
       "-fPIC",
       "-Xcc",
       "-g",
       "-driver-use-frontend-path",
-      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+      "/Applications/Xcode-26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
     ]
   },
   "targetDependencyMap" : {
-    "hosted_ios_plugin" : [
+    "HostedIOSAlinmapay" : [
 
     ]
   },
@@ -381,7 +369,7 @@
     }
   },
   "writeCommands" : {
-    "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/hosted_ios_plugin.build/sources" : {
+    "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/HostedIOSAlinmapay.build/sources" : {
       "alwaysOutOfDate" : false,
       "inputs" : [
         {
@@ -450,12 +438,12 @@
         },
         {
           "kind" : "file",
-          "name" : "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/hosted_ios_plugin.build/DerivedSources/resource_bundle_accessor.swift"
+          "name" : "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/HostedIOSAlinmapay.build/DerivedSources/resource_bundle_accessor.swift"
         }
       ],
-      "outputFilePath" : "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/hosted_ios_plugin.build/sources"
+      "outputFilePath" : "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/HostedIOSAlinmapay.build/sources"
     },
-    "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt" : {
+    "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/swift-version--112E4EF74740DA65.txt" : {
       "alwaysOutOfDate" : true,
       "inputs" : [
         {
@@ -464,10 +452,10 @@
         },
         {
           "kind" : "file",
-          "name" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+          "name" : "/Applications/Xcode-26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
         }
       ],
-      "outputFilePath" : "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+      "outputFilePath" : "/Users/admin/Documents/iOS/ClickPay/Bitbucket/iOS-Hosted-Plugin/.build/arm64-apple-macosx/debug/swift-version--112E4EF74740DA65.txt"
     }
   }
 }
