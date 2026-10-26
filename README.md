@@ -16,9 +16,32 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 iOS_Hosted_plugin is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
-```ruby
-    pod 'hosted-ios-plugin', '1.0.0'
+``` ruby
+    pod 'hosted-ios-alinmapay', '1.0.0'
 ```
+**Note:** CocoaPods integration remains supported.
+
+
+### Swift Package Manager (SPM)
+
+The iOS Hosted SDK can be integrated using Swift Package Manager.
+
+**SPM Repository URL:**
+
+``` text
+https://github.com/Sftcpg/Native_iOS_Alinmapay_Hosted.git
+```
+
+#### Installation using Xcode
+
+1. Open your iOS application in Xcode.
+2. Navigate to File → Add Package Dependencies.
+3. Enter the SPM repository URL above.
+4. Select version 1.0.0 
+5. Click Add Package and select your application target.
+6. Build your project to verify integration.
+
+
 
 ## Author
 
