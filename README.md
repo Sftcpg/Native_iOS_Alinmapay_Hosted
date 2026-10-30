@@ -1,4 +1,4 @@
-# iOS_Hosted_plugin
+# Native IOS Alinmapay Plugin
 
 [![CI Status](https://img.shields.io/travis//Concerto-hub/ios_Hosted.svg?style=flat)](https://travis-ci.org/Concerto-hub/ios_Hosted)
 [![Version](https://img.shields.io/cocoapods/v/iOS_Hosted_plugin.svg?style=flat)](https://cocoapods.org/pods/iOS_Hosted_plugin)
@@ -37,7 +37,7 @@ https://github.com/Sftcpg/Native_iOS_Alinmapay_Hosted.git
 1. Open your iOS application in Xcode.
 2. Navigate to File → Add Package Dependencies.
 3. Enter the SPM repository URL above.
-4. Select version 1.0.0 
+4. Select version 1.0.1 
 5. Click Add Package and select your application target.
 6. Build your project to verify integration.
 
