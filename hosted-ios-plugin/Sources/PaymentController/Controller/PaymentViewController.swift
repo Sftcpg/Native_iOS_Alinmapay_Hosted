@@ -53,8 +53,19 @@ class PaymentViewController: UIViewController {
         self.navigationController?.setNavigationBarHidden(false, animated: true)
         self.view.backgroundColor = .white
         
-        guard let model = initModel else {return}
-        self.interactor?.postAPI(for: model)
+//        guard let model = initModel else {return}
+        guard let model = initModel else {
+            print("❌ initModel is NIL")
+            return
+        }
+
+        guard let interactor = self.interactor else {
+            print("❌ PaymentInteractor is NIL")
+            return
+        }
+
+        print("✅ Calling PaymentInteractor.postAPI")
+        interactor.postAPI(for: model)
 
         
         webView = WKWebView()
@@ -108,7 +119,7 @@ extension PaymentViewController: IPaymentViewController {
     
     func apiResult(result: paymentResult, response: String, error: Error?) {
      // print("IN PAYMNET CONTROll " ,response)
-       //let message = UMResponceMessage.responseDict[responsecode] ?? ""
+     //let message = UMResponceMessage.responseDict[responsecode] ?? ""
         
 
 

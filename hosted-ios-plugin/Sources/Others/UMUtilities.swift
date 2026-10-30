@@ -21,12 +21,29 @@ public struct ZDLUtility {
     }
 }
 
-func getController(_ storyBoardName: String, _ identifier: String) -> UIViewController {
-    
+
+func getController(
+    _ storyBoardName: String,
+    _ identifier: String
+) -> UIViewController {
+
+    #if SWIFT_PACKAGE
+    let bundle = Bundle.module
+    #else
     let bundle = Bundle(for: PaymentViewController.self)
-    
-    return UIStoryboard(name: storyBoardName, bundle: bundle).instantiateViewController(withIdentifier: identifier)
+    #endif
+
+    print("Storyboard Name: \(storyBoardName)")
+    print("Storyboard Bundle: \(bundle.bundlePath)")
+
+    return UIStoryboard(
+        name: storyBoardName,
+        bundle: bundle
+    ).instantiateViewController(
+        withIdentifier: identifier
+    )
 }
+
 
 internal class Common: NSObject {
 

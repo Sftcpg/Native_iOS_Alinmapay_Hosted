@@ -23,6 +23,11 @@ struct Item {
 class PaymentInteractor: IPaymentInteractor {
     func postAPI(for model: UWInitializer) {
         
+        
+        print("========== PAYMENT INTERACTOR ==========")
+           print("✅ postAPI called")
+           print("Presenter available:", presenter != nil)
+
         var requestHash:String = ""
         var data: String = ""
         let request = model.request
@@ -154,7 +159,7 @@ class PaymentInteractor: IPaymentInteractor {
         }
         urlRequest.httpMethod = "POST"
         urlRequest.addValue("application/json", forHTTPHeaderField: "Content-Type")
-        
+        urlRequest.timeoutInterval = 30
         URLSession.shared.dataTask(with: urlRequest) { data, response, error in
             guard let data = data else {
                 print("Error fetching data: \(String(describing: error))")
