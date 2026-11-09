@@ -19,7 +19,7 @@ The AlinmaPay Hosted iOS SDK is available through CocoaPods.
 Add the following dependency to your application's `Podfile`:
 
 ```ruby
-pod 'hosted-ios-alinmapay', '1.0.0'
+pod 'hosted-ios-alinmapay', '1.0.2'
 ```
 
 Install the dependency:
@@ -30,7 +30,7 @@ pod install
 
 Open the generated `.xcworkspace` file in Xcode.
 
-**Note:** CocoaPods integration remains supported at version `1.0.0`.
+
 
 ### Option 2: Swift Package Manager (SPM)
 
@@ -42,14 +42,14 @@ The AlinmaPay Hosted iOS SDK supports source-based integration through Swift Pac
 https://github.com/Sftcpg/Native_iOS_Alinmapay_Hosted.git
 ```
 
-**Available SPM version:** `1.0.1`
+**Available SPM version:** `1.0.2`
 
 #### Installation using Xcode
 
 1. Open your iOS application in Xcode.
 2. Navigate to **File → Add Package Dependencies**.
 3. Enter the SPM repository URL provided above.
-4. Select **Exact Version** and enter `1.0.1`.
+4. Select **Exact Version** and enter `1.0.2`.
 5. Click **Add Package**.
 6. Select the `HostedIOSAlinmapay` library product and add it to your application target.
 7. Build your application to verify integration.
