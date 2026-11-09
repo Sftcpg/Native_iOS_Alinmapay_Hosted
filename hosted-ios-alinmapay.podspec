@@ -3,7 +3,7 @@ Pod::Spec.new do |spec|
 
 
   spec.name         = "hosted-ios-alinmapay"
-  spec.version      = "1.0.0"
+  spec.version      = "1.0.2"
   spec.summary      = "Plugin hosted-ios-plugin."
   spec.swift_versions   = ['5.0']
  spec.description  = "Payment transactions are processed using the AlinmaPay Hosted iOS Payment Plugin."
