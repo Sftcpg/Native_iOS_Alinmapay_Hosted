@@ -31,7 +31,9 @@ public class PaymentRequest {
 
     // Dynamic object like airline, hotel, insurance etc.
     public var airlineData: [String: Any]?
-
+    public var strlanguage: String = ""
+    
+    
     public init() {
     }
 
@@ -68,6 +70,7 @@ public class PaymentRequest {
                 "cardToken": cardToken,
                 "tokenizationType": tokenType
             ],
+            "language":strlanguage
             
         ]
 
