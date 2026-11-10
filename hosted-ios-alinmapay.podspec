@@ -2,11 +2,18 @@
 Pod::Spec.new do |spec|
 
 
-  spec.name         = "hosted-ios-alinmapay"
-  spec.version      = "1.0.2"
-  spec.summary      = "Plugin hosted-ios-plugin."
-  spec.swift_versions   = ['5.0']
- spec.description  = "Payment transactions are processed using the AlinmaPay Hosted iOS Payment Plugin."
+    spec.name    = "hosted-ios-alinmapay"
+    spec.version = '1.0.3'
+    spec.module_name = 'HostedIOSAlinmapay'
+
+    spec.swift_versions   = ['5.0']
+    spec.summary = 'AlinmaPay Hosted Payment SDK for iOS.'
+
+    spec.description = <<-DESC
+    AlinmaPay Hosted iOS SDK enables merchants to
+    integrate hosted payment functionality into native
+    iOS applications using CocoaPods or Swift Package Manager.
+    DESC
 
   spec.homepage     = "https://github.com/Sftcpg/Native_iOS_Alinmapay_Hosted"
   

@@ -6,5 +6,5 @@ target 'hosted-ios-plugin' do
   use_frameworks!
 
   # Pods for hosted-ios-plugin
-
+    pod 'hosted-ios-alinmapay', '1.0.2'
 end

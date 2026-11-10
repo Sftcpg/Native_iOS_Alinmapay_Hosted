@@ -1,4 +1,4 @@
-# Native iOS AlinmaPay Hosted SDK
+# AlinmaPay Hosted iOS SDK
 
 The AlinmaPay Hosted iOS SDK enables merchants to integrate hosted payment functionality into their iOS applications.
 
@@ -36,9 +36,6 @@ The AlinmaPay Hosted iOS SDK is available through CocoaPods.
    ```swift
       import HostedIOSAlinmapay
    ```
-
-
-
 
 ### Option 2: Swift Package Manager (SPM)
 
