@@ -16,19 +16,27 @@ The SDK supports installation using **CocoaPods** and **Swift Package Manager (S
 
 The AlinmaPay Hosted iOS SDK is available through CocoaPods.
 
-Add the following dependency to your application's `Podfile`:
+- Add the following to your Podfile:
 
-```ruby
-pod 'hosted-ios-alinmapay', '1.0.2'
-```
+        platform :ios, '12.0'
 
-Install the dependency:
+        target 'YourAppTarget' do
+          use_frameworks!
+          pod 'hosted-ios-alinmapay', '1.0.3'
+        end
 
-```bash
-pod install
-```
+- Install the dependency:
 
-Open the generated `.xcworkspace` file in Xcode.
+    ```bash
+        pod install --repo-update
+    ```
+
+- Import the SDK:
+
+   ```swift
+      import HostedIOSAlinmapay
+   ```
+
 
 
 
