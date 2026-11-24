@@ -14,4 +14,8 @@
 
 * TODO: Language Integration in Cocoapod.
 
+## [1.0.4] - 24 Nov 2026.
+
+* TODO: Applepay Token Decryption .
+
 

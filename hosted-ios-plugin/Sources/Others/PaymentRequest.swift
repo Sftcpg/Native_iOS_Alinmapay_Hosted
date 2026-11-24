@@ -83,7 +83,7 @@ public class PaymentRequest {
         }
 
         if let paymentToken = paymentToken, !paymentToken.isEmpty {
-            request["PaymentToken"] = paymentToken
+            request["paymentToken"] = paymentToken
 
             request["paymentInstrument"] = [
                 "paymentMethod": "APPLEPAY"
