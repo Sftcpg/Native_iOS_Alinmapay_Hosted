@@ -3,7 +3,7 @@ Pod::Spec.new do |spec|
 
 
     spec.name    = "hosted-ios-alinmapay"
-    spec.version = '1.0.4'
+    spec.version = '1.0.5'
     spec.module_name = 'HostedIOSAlinmapay'
 
     spec.swift_versions   = ['5.0']

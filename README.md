@@ -22,7 +22,7 @@ The AlinmaPay Hosted iOS SDK is available through CocoaPods.
 
         target 'YourAppTarget' do
           use_frameworks!
-          pod 'hosted-ios-alinmapay', '1.0.4'
+          pod 'hosted-ios-alinmapay', '1.0.5'
         end
 
 - Install the dependency:
