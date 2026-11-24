@@ -18,4 +18,8 @@
 
 * TODO: Applepay Token Decryption .
 
+## [1.0.5] - 24 Nov 2026.
+
+* TODO: Applepay Token Decryption in Cocoapod.
+
 
